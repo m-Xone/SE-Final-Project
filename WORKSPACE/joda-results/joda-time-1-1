@@ -1,0 +1,73 @@
+COMPARISON OF /Users/billyoung/Dropbox/Public/pmd_out/joda-time-out.csv AND /Users/billyoung/Dropbox/Public/ss_bugdata/joda-time-ss_bugdata.csv AND /Users/billyoung/Dropbox/Public/entropy_data/joda-time_metrics_entropy.csv
+
+<< ENTROPY >>
+Files interpreted:             8
+Lines interpreted:             2468
+Buggy lines:                   32
+Non-buggy lines:               2436
+Buggy high entropy lines:      17
+Buggy low entropy lines:       15
+Non-buggy high entropy lines:  1088
+Non-buggy low entropy lines:   1348
+Average entropy of bug lines:  5.9786
+Average entropy, nonbug lines: 4.8089
+
+<< VERIFIED >>
+Number of buggy files found:   687
+Number of verified bugs:       11667
+
+<< PMD >>
+Number of files in violation:  5632
+Number of violations found:    530344
+Types of violations reported:  65
+
+<< DATA >>
+Preprocessing time:            4.7944s
+Search time:                   9.2416s
+Search radius:                 2
+Shared by PMD and Entropy:     0
+Shared by PMD and Bug Data:    582
+Shared by Bug Data and Entropy:0
+Shared by all three methods:   0
+
+BUG DATA vs PMD
+Number of matched lines:       582
+True match percentage:         4.9884%
+Verified bugs w/o violation:   11085
+PMD violations without match:  529762
+# of critical violations:      3
+Most common rule violations:   
+JUnitAssertionsShouldIncludeMessage      369   
+JUnitTestContainsTooManyAsserts          39    
+EmptyCatchBlock                          32    
+DoNotUseThreads                          28    
+DefaultPackage                           20    
+AvoidCatchingGenericException            18    
+OnlyOneReturn                            14    
+BeanMembersShouldSerialize               14    
+SignatureDeclareThrowsException          12    
+EmptyIfStmt                              10    
+
+ENTROPY DATA vs PMD
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Verified bugs w/o violation:   32
+
+ENTROPY DATA vs BUG DATA
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Entropy bugs w/o match:        32
+
+ENTROPY DATA vs BUG DATA vs PMD
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Entropy bugs w/o match:        32

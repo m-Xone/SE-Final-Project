@@ -1,0 +1,73 @@
+COMPARISON OF /Users/billyoung/Dropbox/Public/pmd_out/jfreechart-out.csv AND /Users/billyoung/Dropbox/Public/ss_bugdata/jfreechart-ss_bugdata.csv AND /Users/billyoung/Dropbox/Public/entropy_data/jfreechart_metrics_entropy.csv
+
+<< ENTROPY >>
+Files interpreted:             7
+Lines interpreted:             2195
+Buggy lines:                   7
+Non-buggy lines:               2188
+Buggy high entropy lines:      2
+Buggy low entropy lines:       5
+Non-buggy high entropy lines:  678
+Non-buggy low entropy lines:   1510
+Average entropy of bug lines:  4.5309
+Average entropy, nonbug lines: 4.0892
+
+<< VERIFIED >>
+Number of buggy files found:   120
+Number of verified bugs:       1996
+
+<< PMD >>
+Number of files in violation:  957
+Number of violations found:    34844
+Types of violations reported:  61
+
+<< DATA >>
+Preprocessing time:            1.2635s
+Search time:                   0.3596s
+Search radius:                 2
+Shared by PMD and Entropy:     0
+Shared by PMD and Bug Data:    150
+Shared by Bug Data and Entropy:0
+Shared by all three methods:   0
+
+BUG DATA vs PMD
+Number of matched lines:       150
+True match percentage:         7.5150%
+Verified bugs w/o violation:   1846
+PMD violations without match:  34694
+# of critical violations:      3
+Most common rule violations:   
+JUnitAssertionsShouldIncludeMessage      42    
+OnlyOneReturn                            35    
+BeanMembersShouldSerialize               13    
+NullAssignment                           13    
+UseAssertEqualsInsteadOfAssertTrue       10    
+AvoidLiteralsInIfCondition               7     
+JUnitTestContainsTooManyAsserts          6     
+AvoidThrowingRawExceptionTypes           6     
+CallSuperInConstructor                   4     
+AvoidCatchingGenericException            4     
+
+ENTROPY DATA vs PMD
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Verified bugs w/o violation:   7
+
+ENTROPY DATA vs BUG DATA
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Entropy bugs w/o match:        7
+
+ENTROPY DATA vs BUG DATA vs PMD
+Number of matched buggy lines: 0
+Number of matched nobug lines: 0
+Avg entropy of buggy matches:  0.0000
+Avg entropy of nobug matches:  0.0000
+True match percentage:         0.0000%
+Entropy bugs w/o match:        7
